@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card Holder's Information</title>
+  <link rel="stylesheet" href="style.css" />
+  <script async src="script.js"></script>
+  
+  
+  <style>
+  
+.holder-content p {
+  font-size: 13px;
+}
+
+  </style>
+  
+  
+  
+</head>
+<body>
+ <header class="main-header">
+  <a href="index.html" class="brand-link">
+    <img src="snhs.png" class="school-logo" />
+    <h2 class="school-name">Subic NHS - 11 Modesty</h2>
+  </a>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<nav class="dropdown-menu" id="menu">
+  <a href="index.html">Home</a>
+  <a href="new-page.html">Card Holders</a>
+  <a href="about.html">About</a>
+
+</nav>
+
+
+
+
+
+
+
+
+<div class="card-container">
+    <header class="header">
+      <h1>Registered Card Holders</h1>
+    </header>
+
+
+
+    <!-- CREATOR: ABRAHAM BAYLAND  (SGT. & ARMS) -->
+    <div class="holder" onclick="toggleHolder(this)">
+      <div class="holder-header">
+        <span class="holder-name">Abraham Bayland</span>
+        <img src="lol.jpeg" class="profile-pic-small" />
+      </div>
+      <div class="holder-content">
+        <img src="lol.jpeg" class="profile-pic" />
+        <h2>Abraham Bayland</h2>
+        <p>Website & ID Card Creator</p>
+        <br>
+        <p>Position: SGT. & Arms 1</p>
+        <p>ID No.: 000001</p>
+        <p>Joined Date: <span class="status active">June 16, 2025</span></p>
+        <p>Expiration Date: <span class="status expire">March 2, 2026</span></p>
+       <p>Card Status: <span class="timer"></span></p>
+      </div>
+    </div>
+    
+    
+    <!-- Vice President -->
+    <div class="holder" onclick="toggleHolder(this)">
+      <div class="holder-header" id="1">
+        <span class="holder-name" id="1">Gabrielle Keith A. Nabokiag</span>
+        <img src="gab.jpeg" class="profile-pic-small" />
+      </div>
+      <div class="holder-content">
+        <img src="gab.jpeg" class="profile-pic" />
+        <h2>Gabrielle Keith A. Nabokiag</h2>
+        <p>Position: Vice President</p>
+        <p>ID No.: 000002</p>
+        <p>Joined Date: <span class="status active">June 16, 2025</span></p>
+        <p>Expiration Date: <span class="status expire">March 2, 2026</span></p>
+       <p>Card Status: <span class="timer"></span></p>
+      </div>
+    </div>
+    
+    
+    <!-- Public Information Officer (P.I.O) -->
+    <div class="holder" onclick="toggleHolder(this)">
+      <div class="holder-header" id="1">
+        <span class="holder-name" id="1">John Benedict B. Lila</span>
+        <img src="benedict.jpeg" class="profile-pic-small" />
+      </div>
+      <div class="holder-content">
+        <img src="benedict.jpeg" class="profile-pic" />
+        <h2>John Benedict B. Lila</h2>
+        <p>Position: Public Information Officer (P.I.O)</p>
+        <p>ID No.: 000003</p>
+        <p>Joined Date: <span class="status active">June 16, 2025</span></p>
+        <p>Expiration Date: <span class="status expire">March 2, 2026</span></p>
+        <p>Card Status: <span class="timer"></span></p>
+      </div>
+    </div>
+    
+    
+    <!-- Auditor -->
+    <div class="holder" onclick="toggleHolder(this)">
+      <div class="holder-header" id="1">
+        <span class="holder-name" id="1">Drew Kaero B. Pastrana</span>
+        <img src="drew.jpeg" class="profile-pic-small" />
+      </div>
+      <div class="holder-content">
+        <img src="drew.jpeg" class="profile-pic" />
+        <h2>Drew Kaero B. Pastrana</h2>
+        <p>Position: Auditor</p>
+        <p>ID No.: 000004</p>
+        <p>Joined Date: <span class="status active">June 16, 2025</span></p>
+        <p>Expiration Date: <span class="status expire">March 2, 2026</span></p>
+       <p>Card Status: <span class="timer"></span></p>
+      </div>
+    </div>
+    
+    
+    <!-- President -->
+    <div class="holder" onclick="toggleHolder(this)">
+      <div class="holder-header" id="1">
+        <span class="holder-name" id="1">Kate Nathalie C. Dimarucut</span>
+        <img src="nathalie.jpeg" class="profile-pic-small" />
+      </div>
+      <div class="holder-content">
+        <img src="nathalie.jpeg" class="profile-pic" />
+        <h2>Kate Nathalie C. Dimarucut</h2>
+        <p>Position: President</p>
+        <p>ID No.: 000005</p>
+        <p>Joined Date: <span class="status active">June 16, 2025</span></p>
+        <p>Expiration Date: <span class="status expire">March 2, 2026</span></p>
+       <p>Card Status: <span class="timer"></span></p>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+  </div>
+</body>
+</html>
