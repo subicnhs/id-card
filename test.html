@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Animated Border Box</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #0b0b0f;
+    font-family: Arial, sans-serif;
+  }
+
+  .box-wrapper {
+    position: relative;
+    width: 320px;
+    height: 200px;
+  }
+
+  /* SVG border layer */
+  .border-svg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .border-svg rect {
+    fill: none;
+    stroke: #00f7ff;
+    stroke-width: 2;
+    stroke-dasharray: 60 340;
+    animation: border-move 4s linear infinite;
+  }
+
+  @keyframes border-move {
+    to {
+      stroke-dashoffset: -400;
+    }
+  }
+
+  /* Content box */
+  .content-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+
+  .content-box h3 {
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="box-wrapper">
+
+  <!-- Animated border -->
+  <svg class="border-svg" viewBox="0 0 320 200" preserveAspectRatio="none">
+    <rect
+      x="1"
+      y="1"
+      width="318"
+      height="198"
+      rx="16"
+      ry="16"
+    />
+  </svg>
+
+  <!-- Content -->
+  <div class="content-box">
+    <h3>Animated Border Box</h3>
+    <p>
+      This box can hold text, buttons, images, or layouts.
+      The animated border stays perfectly intact and smooth
+      even around rounded corners.
+    </p>
+    <p>
+      You can freely change opacity, content, or size.
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>

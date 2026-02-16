@@ -1,8 +1,19 @@
 // --- DROPDOWN LOGIC (ONLY ONE OPEN AT A TIME) ---
 function toggleHolder(holder) {
   
+  const creatorHolder = document.querySelectorAll('.holder-creator');
   const allHolders = document.querySelectorAll('.holder');
   var holderName = holder.querySelector('.holder-name');
+  
+  creatorHolder.forEach(h => {
+    if (h !== holder) {
+      h.querySelector('.holder-content').style.display = 'none';
+      const img = h.querySelector('.profile-pic-small');
+      if (img) img.style.display = 'block';
+      const otherName = h.querySelector('.holder-name');
+if (otherName) otherName.style.display = 'block';
+    }
+  });
   
   allHolders.forEach(h => {
     if (h !== holder) {
@@ -58,7 +69,7 @@ function startCountdown() {
       const minutes = d.getUTCMinutes();
       const seconds = d.getUTCSeconds();
 
-      timer.textContent = `${months}m ${days}d ${hours}h ${minutes}m ${seconds}s`;
+      timer.textContent = `${months}Mo ${days}D ${hours}H ${minutes}Min ${seconds}Sec`;
     }, 1000);
   });
 }
@@ -75,3 +86,23 @@ function toggleMenu() {
   const menu = document.getElementById('menu');
   menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  const card = document.querySelector('.card-container');
+  const rect = card.querySelector('rect');
+
+  const radius = getComputedStyle(card).borderRadius;
+  rect.setAttribute('rx', parseFloat(radius));
+  rect.setAttribute('ry', parseFloat(radius));
+*/
