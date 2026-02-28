@@ -50,7 +50,7 @@ function startCountdown() {
   const timers = document.querySelectorAll('.timer');
 
   timers.forEach(timer => {
-    const target = new Date(Date.UTC(2026, 2, 2, 23, 59, 59)).getTime();
+    const target = new Date(Date.UTC(2026, 2, 27, 23, 59, 59)).getTime();
 
     setInterval(() => {
       const now = Date.now();
